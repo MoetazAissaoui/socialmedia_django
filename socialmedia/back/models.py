@@ -20,7 +20,7 @@ class Profile(models.Model):
     mail_verification=models.BooleanField(default=True)
     id_user= models.IntegerField()
     bio= models.TextField()
-    location= models.CharField(max_length=100,blank=True,default="Unknown")
+    location= models.CharField(max_length=100,blank=True,default="Tunisia")
     role= models.CharField(max_length=100,blank=True,default="Can't say")
     fname= models.CharField(max_length=100,default="Mr./Mrs.")
     lname= models.CharField(max_length=100,default="Unknown",)
@@ -30,12 +30,8 @@ class Profile(models.Model):
     joining=models.DateField(default=date.today)
     dob=models.DateField(default=date.today)
 
-
-    
     def __str__(self) :
         return self.user.username
-    
-    
     
 
 class Images(models.Model):
@@ -68,10 +64,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.user
-    
-    
-    
-
 
 class Likepost(models.Model):
     postid=models.CharField(max_length=500)
@@ -116,10 +108,3 @@ class saveotp(models.Model):
 
     def __str__(self):
         return self.email
-    
-
-    
-
-
-
-
