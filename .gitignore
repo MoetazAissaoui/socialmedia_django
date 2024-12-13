@@ -17,9 +17,9 @@ media/
 .env
 
 # Virtual environment
-sclone/venv/
-sclone/env/
-sclone/.vscode
+socialmedia/venv/
+socialmedia/env/
+socialmedia/.vscode
 README.md
 Jenkinsfile
-sclone/docker-compose.yml
+socialmedia/docker-compose.yml
